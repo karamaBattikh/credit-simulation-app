@@ -1,16 +1,14 @@
+/* eslint-disable sonarjs/no-duplicate-string */
 import * as yup from 'yup';
 
-export const validationSchema = yup
-  .object()
-  .shape({
-    amountBorrow: yup.number().required(),
-    duration: yup.number().required(),
-    fonds: yup.number().required(),
-    interestRate: yup.number().required(),
-    purchaseAmount: yup.number().required(),
-    purchaseCosts: yup.number().required(),
-  })
-  .required();
+export const validationSchema = yup.object().shape({
+  amountBorrow: yup.number('should be number').required('is required'),
+  duration: yup.number('should be number').required('is required'),
+  fonds: yup.number('should be number').required('is required'),
+  interestRate: yup.number('should be number').required('is required'),
+  purchaseAmount: yup.number('should be number').required('is required'),
+  purchaseCosts: yup.number('should be number').required('is required'),
+});
 
 export const initialValues = {
   amountBorrow: '',

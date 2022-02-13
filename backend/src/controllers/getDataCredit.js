@@ -26,6 +26,7 @@ const getDataCredit = (req, res) => {
       const soldFinal = (soldDebut - capitalRepaid)?.toFixed(2);
 
       const obj = {
+        id: elt + 1,
         monthly: monthlyPayment,
         capital: capitalRepaid,
         rate,

@@ -1,4 +1,4 @@
- import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import { useController } from 'react-hook-form';
 
 import Input from '../input';
