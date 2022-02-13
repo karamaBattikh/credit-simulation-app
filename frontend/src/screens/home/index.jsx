@@ -50,7 +50,7 @@ const Home = () => {
           name="purchaseCosts"
           type="number"
           control={control}
-          hasError={errors?.purchaseCosts?.message}
+          hasError={errors?.purchaseCosts && errors?.purchaseCosts?.message}
           disabled={watch('purchaseCostsAuto')}
         />
 
@@ -64,7 +64,7 @@ const Home = () => {
         name="fonds"
         type="number"
         control={control}
-        hasError={errors?.fonds?.message}
+        hasError={errors?.fonds && errors?.fonds?.message}
       />
 
       <FieldGroup direction="row" gap="5">
@@ -75,7 +75,7 @@ const Home = () => {
           name="amountBorrow"
           type="number"
           control={control}
-          hasError={errors?.amountBorrow?.message}
+          hasError={errors?.amountBorrow && errors?.amountBorrow?.message}
         />
         <ToggleController label="auto" name="amountBorrowAuto" control={control} />
       </FieldGroup>
@@ -87,7 +87,7 @@ const Home = () => {
         name="duration"
         type="number"
         control={control}
-        hasError={errors?.duration?.message}
+        hasError={errors?.duration && errors?.duration?.message}
       />
 
       <InputController
@@ -97,7 +97,7 @@ const Home = () => {
         name="interestRate"
         type="number"
         control={control}
-        hasError={errors?.interestRate?.message}
+        hasError={errors?.interestRate && errors?.interestRate?.message}
       />
       <Button type="submit">Validation</Button>
     </form>
