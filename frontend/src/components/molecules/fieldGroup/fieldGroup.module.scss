@@ -1,0 +1,21 @@
+.field-group {
+  display: flex;
+  flex-wrap: nowrap;
+
+  &.column {
+    flex-direction: column;
+    margin: calc(var(--gap) * -1) 0;
+    > * {
+      padding: var(--gap) 0;
+    }
+  }
+  &.row {
+    flex-direction: row;
+    align-items: flex-start;
+
+    margin: auto calc(var(--gap) * -1);
+    > * {
+      padding: 0 var(--gap);
+    }
+  }
+}
