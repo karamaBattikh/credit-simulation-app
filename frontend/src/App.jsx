@@ -1,4 +1,4 @@
-import './App.css';
+import 'styles/reset.scss'
 
 export default function App() {
   return (
