@@ -1,0 +1,15 @@
+*.log
+
+yarn-debug.log*
+yarn-error.log*
+
+node_modules/
+.npm
+
+.env
+
+package-lock.json
+
+dist
+
+.vscode
